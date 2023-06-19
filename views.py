@@ -46,7 +46,7 @@ def autenticar():
             proxima_pagina = request.form['proxima']
             return redirect(proxima_pagina)
     else:
-        flash('Usuário não cadastrado!')
+        flash('Usuário não logado.')
         return redirect(url_for('login'))
 
 @app.route('/logout')
