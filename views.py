@@ -60,6 +60,9 @@ def atualizar():
 
     return redirect(url_for('index'))
 
+
+    return redirect(url_for('index'))
+
 @app.route('/deletar/<int:id>')
 def deletar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
